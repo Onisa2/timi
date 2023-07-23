@@ -18,13 +18,9 @@ jobs:
         username: ${{ secrets.USER_NAME_DOCKER }}
         password: ${{ secrets.USER_DOCKER_PASSWORD }}
         
-    - name: Build and push Docker image
-      uses: docker/build-push-action@v4
-      with:
-        context: .
-        push: true
-        tags:  |
-          hello-world:latest
-          hello-world:custom-tag
-
+    - name: Build Docker image
+      run: docker build -t saros2/hello-world:latest .
+      
+    - name: Push Docker image
+      run: docker push saros2/hello-world:latest
 
