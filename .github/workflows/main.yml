@@ -26,4 +26,6 @@ jobs:
         tags:  |
              hello-world:latest
              hello-world:custom-tag
+                           extra-build-args: --progress plain
+             
 
