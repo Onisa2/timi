@@ -23,5 +23,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: yetundeyusuf/newbie:latest
+        tags: docker pull hello-world:latest
 
