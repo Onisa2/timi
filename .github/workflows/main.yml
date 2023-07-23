@@ -24,8 +24,7 @@ jobs:
         context: .
         push: true
         tags:  |
-             hello-world:latest
-             hello-world:custom-tag
-                           extra-build-args: --progress plain
-             
+          hello-world:latest
+          hello-world:custom-tag
+
 
